@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Hexler Tech</title>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebarContainerWrapper">
+      <div class="sidebarContainer">
+        <div class="sidebarLogo" onclick="handleClick()">
+          <i class="fa fa-bars" id="open" aria-hidden="true"></i>
+          <i class="fa fa-times" id="close" aria-hidden="true"></i>
+        </div>
+        <div class="sidebar" id="Side">
+          <img src="./images/logoTop.png" alt="" srcset="" id="Side" />
+          <div class="border" id="Side"></div>
+          <span><a href="./home.htm">Home</a></span>
+          <span><a href="./about.htm">About</a></span>
+          <span><a href="./services.htm">Services</a></span>
+          <span><a href="./contact.htm">Contact</a></span>
+          <span><a href="./learn.htm">Learn</a></span>
+          <div class="copyright" id="Side">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Hexler Tech SMC Pvt. Ltd
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $("html").click(function (e) {
+        if (
+          e.target.id != "Side" &&
+          document.getElementById("open").style.display == "none"
+        ) {
+          if (e.target.id != "open") {
+            handleClick();
+          }
+        }
+      });
+
+      function handleClick() {
+        if (document.getElementById("open").style.display != "none") {
+          document.getElementById("open").style.display = "none";
+          document.getElementById("close").style.display = "block";
+          document;
+          $(".sidebarContainer").css("left", "calc(30% - 40px)");
+          $(".mainBodyContainer").css("height", "650px");
+          $(".sidebarContainerWrapper").css(
+            "background-color",
+            "rgba(0, 0, 0, 0.7)"
+          );
+          $(".sidebarContainerWrapper").css("z-index", "5");
+        } else {
+          document.getElementById("close").style.display = "none";
+          document.getElementById("open").style.display = "block";
+          $(".sidebarContainer").css("left", "calc(100% - 40px)");
+          $(".mainBodyContainer").css("height", "100%");
+          $(".sidebarContainerWrapper").css("background-color", "transparent");
+          $(".sidebarContainerWrapper").css("z-index", "unset");
+        }
+      }
+    </script>
+    <div class="mainBodyContainer">
+      <div class="navbar">
+        <div
+          class="navLogo logoMainTop"
+          style="background-color: transparent; overflow: visible; z-index: 1"
+        >
+          <a href="./home.htm">
+            <img src="./images/logoTop.png" alt="HexlerTech Logo" />
+          </a>
+        </div>
+        <div class="navItemsContainer">
+          <ul class="navItems">
+            <li><a href="./home.htm">Home</a></li>
+            <li><a href="./about.htm">About</a></li>
+            <li><a href="./services.htm" class="active">Services</a></li>
+            <li><a href="./contact.htm">Contact</a></li>
+            <li><a href="./learn.htm">Learn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ServiceTitle">
+        <h1>Our Services</h1>
+        <p>
+          We offer services that includes from programming, designing to content
+          wrriting. Our mission is to provide quality services to help excel
+          business by our quality work.
+        </p>
+        <span>
+          <a href="./home.htm">Home /</a>
+          <h2>&nbsp; Services</h2>
+        </span>
+      </div>
+      <br /><br />
+      <div class="partetion2"></div>
+      <div class="blackTheme">
+        <br />
+        <h5 class="Heading">Programming & Tech</h5>
+        <br />
+        <div class="slider-container">
+          <ul class="controls" id="customize-controls" tabindex="0">
+            <li
+              class="prev"
+              data-controls="prev"
+              aria-controls="customize"
+              tabindex="-1"
+            >
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </li>
+            <li
+              class="next"
+              data-controls="next"
+              aria-controls="customize"
+              tabindex="-1"
+            >
+              <i class="fa fa-angle-right"></i>
+            </li>
+          </ul>
+          <div class="my-slider">
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Build your Brand</p>
+                <h2>Logo Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Online Presence</p>
+                <h2>Web Developm...</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Web Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Video Editing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Logo Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Logo Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        slider = tns({
+          container: ".my-slider",
+          loop: true,
+          items: "4",
+          slideBy: "1",
+          nav: false,
+          autoplay: true,
+          speed: "400",
+          edgePadding: "10",
+          autoplayTimeout: 3000,
+          autoplayButtonOutput: true,
+          mouseDrag: true,
+          lazyload: true,
+          controlsContainer: "#customize-controls",
+          autoplayButtonOutput: false,
+          responsive: {
+            1600: {
+              items: 4,
+              gutter: 20,
+            },
+            1450: {
+              items: 3,
+              gutter: 20,
+            },
+            1150: {
+              items: 3,
+              gutter: 20,
+            },
+            860: {
+              items: 2,
+              gutter: 20,
+            },
+            570: {
+              items: 1,
+              gutter: 20,
+            },
+            100: {
+              items: 1,
+              gutter: 20,
+            },
+          },
+        });
+      </script>
+      <div class="partetion1"></div>
+      <div class="partetion2"></div>
+      <div class="blackTheme">
+        <br />
+        <h5 class="Heading">Our Popular Professional Services</h5>
+        <br />
+        <div class="slider-container">
+          <ul class="controls" id="customize-controls1" tabindex="0">
+            <li
+              class="prev"
+              data-controls="prev"
+              aria-controls="customize"
+              tabindex="-1"
+            >
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </li>
+            <li
+              class="next"
+              data-controls="next"
+              aria-controls="customize"
+              tabindex="-1"
+            >
+              <i class="fa fa-angle-right"></i>
+            </li>
+          </ul>
+          <div class="my-slider10">
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Logo Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Logo Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Logo Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Logo Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Logo Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="Card">
+                <img src="./images/exampleImage.webp" alt="" />
+                <div class="CardShadow"></div>
+                <p>Buid your Brand</p>
+                <h2>Logo Designing</h2>
+                <div
+                  class="knowMore"
+                  onclick="{window.location.assign('contact.htm')}"
+                >
+                  <p>Know More</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="partetion1"></div>
+      <script>
+        slider = tns({
+          container: ".my-slider10",
+          loop: true,
+          items: "4",
+          slideBy: "1",
+          nav: false,
+          autoplay: true,
+          speed: "400",
+          edgePadding: "10",
+          autoplayTimeout: 3000,
+          autoplayButtonOutput: true,
+          mouseDrag: true,
+          lazyload: true,
+          controlsContainer: "#customize-controls1",
+          autoplayButtonOutput: false,
+          responsive: {
+            1600: {
+              items: 4,
+              gutter: 20,
+            },
+            1450: {
+              items: 3,
+              gutter: 20,
+            },
+            1150: {
+              items: 3,
+              gutter: 20,
+            },
+            860: {
+              items: 2,
+              gutter: 20,
+            },
+            570: {
+              items: 1,
+              gutter: 20,
+            },
+            100: {
+              items: 1,
+              gutter: 20,
+            },
+          },
+        });
+      </script>
+
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <div class="partetion2"></div>
+      <div class="blackTheme">
+        <br />
+        <div class="footer">
+          <div class="cover footer">
+            <div class="Wrapper">
+              <div class="WrapperItem">
+                <h1>Catagories</h1>
+                <a href="./services.htm"><p>Programming & Tech</p></a>
+                <a href="./services.htm"><p>Graphic Designing</p></a>
+                <a href="./services.htm"><p>Web Development</p></a>
+                <a href="./services.htm"><p>Digital Marketing</p></a>
+                <a href="./services.htm"><p>Video & Animation</p></a>
+                <a href="./services.htm"><p>Data</p></a>
+                <a href="./services.htm"><p>Writing & Translation</p></a>
+              </div>
+              <div class="WrapperItem">
+                <h1>Hexler Tech Learn</h1>
+                <a href="./learn.htm"><p>Programming & Tech</p></a>
+                <a href="./learn.htm"><p>Graphic Designing</p></a>
+              </div>
+              <div class="WrapperItem">
+                <h1>Company</h1>
+                <a href="./about.htm"><p>About Us</p></a>
+                <a href="./about.htm"><p>Leadership</p></a>
+                <a href="./about.htm"><p>Team</p></a>
+                <a href="./contact.htm"><p>Contact Us</p></a>
+              </div>
+              <div class="WrapperItem">
+                <h1>Support</h1>
+                <a href="./contact.htm"><p>Help & Support</p></a>
+              </div>
+            </div>
+            <br /><br />
+            <div class="followUs">
+              <p>Follow Us</p>
+              <a
+                href="https://www.facebook.com/people/Hexler-Tech/100089331767167/"
+                ><img src="./images/ri_facebook-fill.png" alt="" srcset=""
+              /></a>
+              <a href=""
+                ><img src="./images/uil_linkedin-alt.png" alt="" srcset=""
+              /></a>
+              <a href="https://www.youtube.com/channel/UCoBpUgogxLVVF4YeAsOs0DQ"
+                ><img src="./images/ri_youtube-fill.png" alt="" srcset=""
+              /></a>
+              <a href="https://instagram.com/hexlertech"
+                ><img src="./images/bi_instagram.png" alt="" srcset=""
+              /></a>
+            </div>
+            <br /><br />
+            <div class="FooternavItemsContainer">
+              <ul class="FooternavItems">
+                <li><a href="./home.htm">Home</a></li>
+                <li><a href="./about.htm">About</a></li>
+                <li><a href="./services.htm" class="active">Services</a></li>
+                <li><a href="./contact.htm">Contact</a></li>
+                <li><a href="./learn.htm">Learn</a></li>
+              </ul>
+            </div>
+            <br /><br />
+            <div class="line"></div>
+            <br />
+            <div class="footerEnd">
+              <div class="footerLogo">
+                <a href="./home.htm">
+                  <img src="./images/logoTop.png" alt="Imnage" srcset="" />
+                </a>
+              </div>
+              <div class="footerCopyRight">
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Hexler Tech SMC Pvt. Ltd
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
