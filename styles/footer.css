@@ -3,7 +3,7 @@
     padding: 0;
     width: 98%;
     margin-left: 1%;
-    background: linear-gradient(180deg, rgba(2, 169, 247, 0.18) 69.89%, rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient( #21064d, #0b195a);
     border-radius: 25px;
 }
 
@@ -22,10 +22,12 @@
 
 .WrapperItem h1 {
     background-color: transparent;
-    color: #9DB1E5;
+    color: #5dadff;
+    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     margin: 20px 0;
+    text-align: start;
 }
 
 .WrapperItem p {
@@ -47,7 +49,7 @@
     padding: 50px 0;
     margin: 0;
     width: 100%;
-    background: linear-gradient(180deg, rgba(2, 169, 247, 0.18) 69.89%, rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient(#21064d, #0b195a);
     border-radius: 25px;
 }
 
