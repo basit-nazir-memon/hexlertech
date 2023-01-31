@@ -456,7 +456,6 @@
     background: -webkit-linear-gradient(120deg, #ceb0fd 0%, #6883ff 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* color: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);; */
     font-weight: 700;
     font-size: 35px;
     line-height: 40px;
@@ -481,14 +480,19 @@
 }
 
 .QualityLeft span h2{
-    color: rgba(157, 177, 229, 1);
+    background: -webkit-linear-gradient(20deg, #e682b9 0%, #708ad4 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-left: 20px;
     font-size: 22px;
+
 }
 
 .QualityLeft span i{
     font-size: 40px;
-    color:#9DB1E5;
+    background: -webkit-linear-gradient(20deg, #b6548a 0%, #dc96bc 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -496,6 +500,7 @@
     flex: 1;
     height: 100%;
     width: 100%;
+    background-color: transparent;
 }
 
 .QualityImage {
@@ -503,7 +508,7 @@
     height: 90%;
     margin: 5%;
     border-radius: 25px;
-    box-shadow: 0px 0px 50px 5px #717070;
+    box-shadow: 0px 0px 30px 5px #708ad4;
 }
 
 .offerings{
@@ -549,6 +554,9 @@
 .OfferingItems i{
     font-size: 20px;
     color: #02a9f7;
+    background: -webkit-linear-gradient(120deg, #e682b9 0%, #277aff 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-color: transparent;
 }
 
@@ -652,7 +660,7 @@
 
 .ProjectsknowMore{
     position: relative;
-    background-color: #02A9F7;
+    background: linear-gradient(150deg, #51249a 0%, #223487 99%);;
     border-radius: 25px;
     width: 150px;
     height: 35px;
@@ -669,7 +677,7 @@
 }
 
 .ProjectsknowMore:hover {
-    background-color: #373737;
+    background: linear-gradient(180deg, #51249a 0%, #223487 99%);
 }
 
 .clients{
@@ -850,7 +858,7 @@
 .ServiceTitle{
     width: 100%;
     height: 270px;
-    background-color:#01363F;
+    background:linear-gradient(250deg, #21064d, #0b195a);
     justify-content: center;
     padding-top: 25px;
 }
@@ -911,9 +919,9 @@
     font-weight: 500;
     font-size: 30px;
     line-height: 48px;
-    margin-left: 10%;
     color: #FFFFFF;
     background-color: transparent;
+    text-align: center;
 }
 
 .Card1 {
@@ -1059,7 +1067,7 @@
     position: relative;
     width: 90%;
     height: 50px;
-    background-color:#01363F;
+    background: linear-gradient(150deg,#4b228b, #0b195a);
     box-shadow: 0px 0px 20px 5px #9DB1E5;
     border-radius: 50px;
     justify-content: center;
@@ -1078,7 +1086,7 @@
 
 .letterBody{
     position: relative;
-    background: #01363F;
+    background: linear-gradient(#21064d, #0b195a);
     box-shadow: 0px 0px 20px 5px #9DB1E5;
     border-radius: 0px 0px 50px 50px;
     width: 80%;
@@ -1128,13 +1136,13 @@
 .ProfileCard{
     width: 60%;
     margin-left: 20%;
-    background: linear-gradient(180deg, #01363F 0%, #1E1E1E 100%);
+    background: linear-gradient(150deg,#21064d, #0b195a);
     border-radius: 25px;
 }
 
 .ProfileCard1 {
     width: 100%;
-    background: linear-gradient(180deg, #01363F 0%, #1E1E1E 100%);
+    background: linear-gradient(150deg, #21064d, #0b195a);
     display: flex;
     border-radius: 25px;
     margin-left: 0px
@@ -1261,7 +1269,7 @@
 
 .contactPart2{
     flex: 2;
-    background-color: #373737;
+    background: linear-gradient(150deg, #d0368a 0%, #193172 70%);;
     border-radius: 25px;
     align-items: center;
     justify-content: center;
@@ -1393,7 +1401,7 @@
 }
 
 .CatagoryItem{
-    background: radial-gradient(50% 50% at 50% 50%, rgba(2, 169, 247, 0.48) 0%, #01363F 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #21064d 0%, #0b195a 99%);
     border-radius: 50px;
     width: 300px;
     height: auto;
@@ -1404,7 +1412,7 @@
 }
 
 .CatagoryItem:hover {
-    box-shadow: 0px 0px 10px 10px #01363F;
+    box-shadow: 0px 0px 10px 4px #21064d;
 }
 
 .CatagoryItem span{
@@ -1436,7 +1444,7 @@
     width: 70%;
     margin-left: 15%;
     height: 250px;
-    background: rgba(2, 169, 247, 0.48);
+    background: linear-gradient(150deg, #21064d, #0b195a);
     border-radius: 50px;
     display: flex;
 }
@@ -1508,12 +1516,13 @@
 }
 
 .followMain{
-    background: rgba(2, 169, 247, 0.5);
+    background: linear-gradient(150deg, #d0368a 0%, #708ad4 90%);
     position: absolute;
     width: 60%;
     margin: 7.5% 30%;
     border-radius: 50px;
     height: calc(200px - 12%);
+    
 }
 
 .followMain h1{
@@ -1528,12 +1537,18 @@
     background-color: transparent;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 .followMain img{
     background-color: transparent;
-    margin: 25px 5px;
+    margin: 25px 0px;
     transition: .2s ease;
+    background: linear-gradient(-80deg, #d0368a 0%, #708ad4 99%);
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px #ffabd9;
 }
 
 .followMain img:hover {
@@ -1874,7 +1889,7 @@ img {
         font-size: 20px;
     }
     .AboutHeader{
-        margin-top: -450px;;
+        margin-top: -450px;
     }
     .AboutHeader h1{
         font-size: 55px;
