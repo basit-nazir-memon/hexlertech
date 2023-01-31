@@ -5,9 +5,22 @@
     text-decoration: none;
     list-style: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
+::-webkit-scrollbar {
+    width: 15px;
 
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+}
 .backgroundGif{
     background-image: url(../images/backgroundAnimation.gif);
     position: fixed;
@@ -406,7 +419,7 @@
     top: calc(100% - 50px);
     left: calc(50% - 80px);
     border-radius: 50px;
-    background-color: #02A9F7;
+    background: linear-gradient(150deg, #51249a 0%, #223487 99%);
     justify-content: center;
     z-index: 1;
     cursor: pointer;
@@ -420,7 +433,7 @@
 }
 
 .knowMore:hover{
-    background-color: #21064d;
+    background: #21064d;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -440,7 +453,10 @@
 }
 
 .QualityLeft h1{
-    color: #02A9F7;
+    background: -webkit-linear-gradient(120deg, #ceb0fd 0%, #6883ff 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);; */
     font-weight: 700;
     font-size: 35px;
     line-height: 40px;
@@ -474,6 +490,7 @@
     font-size: 40px;
     color:#9DB1E5;
 }
+
 
 .QualityRight{
     flex: 1;
@@ -983,6 +1000,7 @@
     transform: rotate(-180deg);
     width: 100%;
     height: 700px;
+    background-color: transparent;
 }
 
 .AboutHeader{
