@@ -2112,10 +2112,11 @@ img {
     }
     .Heading{
         font-style: normal;
+
         font-weight: 500;
-        font-size: 17px;
+        font-size: 15px;
         line-height: 20px;
-        margin-left: 7.5%;
+        margin-left: 0%;
         color: #FFFFFF;
         background-color: transparent;
     }
@@ -2193,6 +2194,7 @@ img {
     .ProjectsknowMore p{
         font-size: 13px;
         line-height: 30px;
+        
     }
     .knowMore{
         height: 30px;
@@ -2566,6 +2568,11 @@ img {
 
     .logoMainTop{
         margin-top: -10px;
+    }
+
+    .getStartedCard h1 {
+        font-size: 23px;
+        text-align: center;
     }
 }
 
