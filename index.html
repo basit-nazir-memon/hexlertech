@@ -24,7 +24,7 @@
 
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   </head>
 
   <body>
@@ -55,7 +55,6 @@
     </div>
     <script>
       $("html").click(function (e) {
-        console.log("Click Event Called");
         if (
           e.target.id != "Side" &&
           document.getElementById("open").style.display == "none"
@@ -67,9 +66,7 @@
       });
 
       function handleClick() {
-        console.log("Handle Click Event Called");
         if (document.getElementById("open").style.display != "none") {
-          console.log("Open Event Called");
           document.getElementById("open").style.display = "none";
           document.getElementById("close").style.display = "block";
           document;
@@ -81,7 +78,6 @@
           );
           $(".sidebarContainerWrapper").css("z-index", "5");
         } else {
-          console.log("Close Event Called");
           document.getElementById("close").style.display = "none";
           document.getElementById("open").style.display = "block";
           $(".sidebarContainer").css("left", "calc(100% - 40px)");
