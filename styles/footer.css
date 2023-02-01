@@ -222,6 +222,8 @@
     }
     .WrapperItem h1, .followUs p {
         font-size: 16px;
+        text-align: center;
+        margin-left: 0;
     }
     .footerCopyRight {
         font-size: 13px;
