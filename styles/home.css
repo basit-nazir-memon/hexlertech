@@ -536,6 +536,7 @@
     display: flex;
     background-color: transparent;
     transition: 0.2s ease;
+    width: 155px;
 }
 
 .OfferingItems:hover {
