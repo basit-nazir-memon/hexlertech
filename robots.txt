@@ -16,4 +16,4 @@ Allow: /
 User-agent: *
 Disallow: 
 
-Sitemap: https://www.hexlertech.com/sitemap_index.xml
+Sitemap: https://www.hexlertech.com/sitemap.xml
