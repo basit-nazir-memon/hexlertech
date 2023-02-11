@@ -16,4 +16,4 @@ User-agent: Teoma
 Allow: /
 
 User-agent: *
-Disallow: /
+Disallow: 
