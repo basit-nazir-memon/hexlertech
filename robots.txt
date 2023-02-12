@@ -1,18 +1,3 @@
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-News
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Teoma
-Allow: /
-
 User-agent: *
 Disallow: 
 
