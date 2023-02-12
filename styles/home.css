@@ -181,7 +181,7 @@
     background-color: transparent;
 }
 
-.topItem h1{
+.topItem h2{
     color:#9DB1E5;
     font-size: 25px;
     margin: 15px 30px;
@@ -1877,7 +1877,7 @@ img {
         width: 95%;
         left: 2.5%;
     }
-    .topItem h1{
+    .topItem h2{
         font-size: 20px;
     }
     .AboutHeader{
@@ -2010,7 +2010,7 @@ img {
         width: 50%;
     }
 
-    .topItem h1{
+    .topItem h2{
         font-size: 20px;
     }
     .CatagoryItem p, .CatagoryItem i{
