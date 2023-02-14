@@ -689,7 +689,7 @@
     background-color: #000000;
 }
 
-.clients h1, .learn h1{
+.clients h1, .clients h2, .learn h1, .learn h2{
     background-color: transparent;
     color: white;
     text-align: center;
@@ -827,7 +827,7 @@
     background-color: transparent;
 }
 
-.getStartedCard h1{
+.getStartedCard h1, .getStartedCard h2{
     background-color: transparent;
     font-size: 35px;
     margin: 0 60px;
@@ -2131,7 +2131,7 @@ img {
         flex-direction: column;
         margin: -10px 7.5%;
     }
-    .QualityLeft h1, .QualityLeft h2, .offerings h1, .offerings h2, .projects h1, .projects h2, .clients h1, .ServicesCardHeading{
+    .QualityLeft h1, .QualityLeft h2, .offerings h1, .offerings h2, .projects h1, .projects h2, .clients h1, .clients h2, .ServicesCardHeading{
         font-size: 17px;
         line-height: 22px;
         max-width: 85%;
@@ -2225,7 +2225,7 @@ img {
         height: 180px;
         flex-direction: column;
     }
-    .getStartedCard h1{
+    .getStartedCard h1, .getStartedCard h2{
         margin-top: 20px;
         font-size: 22px;
         width: 85%;
@@ -2564,7 +2564,7 @@ img {
         margin-top: -10px;
     }
 
-    .getStartedCard h1 {
+    .getStartedCard h1, .getStartedCard h2 {
         font-size: 23px;
         text-align: center;
     }
