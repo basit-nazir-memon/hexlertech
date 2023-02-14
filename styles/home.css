@@ -1226,7 +1226,7 @@
     margin-right: 10px;
 }
 
-.contactPart1 h1{
+.contactPart1 h2{
     color: #9DB1E5;
     font-size: 18px;
     font-weight: bold;
@@ -2522,7 +2522,7 @@ img {
         margin-top: 20px;
         margin-left: 5%;
     }
-    .contactPart1 h1{
+    .contactPart1 h2{
         font-size: 15px;
     }
     .contactPart1 img {
