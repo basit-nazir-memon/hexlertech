@@ -30,6 +30,16 @@
     text-align: start;
 }
 
+.WrapperItem h2 {
+    background-color: transparent;
+    color: #5dadff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: start;
+}
+
 .WrapperItem p {
     background-color: transparent;
     color: white;
@@ -220,7 +230,7 @@
     .WrapperItem p {
         font-size: 14px;
     }
-    .WrapperItem h1, .followUs p {
+    .WrapperItem h1, .WrapperItem h2, .followUs p {
         font-size: 16px;
         text-align: center;
         margin-left: 0;
