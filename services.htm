@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services - Hexler Tech</title>
-    <meta name="description" content="Hexler Tech - Quality solutions & IT services. Customer-centric, process-driven, 24/7 global support. Committed to customer satisfaction."/>
-    <meta name="keywords" content = "Hexler Tech, Hexler, hexler, Hexler Tech SMC, Hexler Tech SMC PVT LTD, Hexler Tech SMC Private Limited, Hexler IT Services, Hexler Tech Services, Hexler Services, HexlerTech.com, Web Services, IT Services"/>
-    <meta name="author" content = "Hexler Tech"/>
-    <link rel="stylesheet" href="./styles/home.css" />
-    <link rel="shortcut icon" href="./images/logoHead.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
-    />
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  </head>
-  <body style="background-color: black">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Services - Hexler Tech</title>
+        <meta name="description" content="Hexler Tech - Quality solutions & IT services. Customer-centric, process-driven, 24/7 global support. Committed to customer satisfaction."/>
+        <meta name="keywords" content = "Hexler Tech, Hexler, hexler, Hexler Tech SMC, Hexler Tech SMC PVT LTD, Hexler Tech SMC Private Limited, Hexler IT Services, Hexler Tech Services, Hexler Services, HexlerTech.com, Web Services, IT Services"/>
+        <meta name="author" content = "Hexler Tech"/>
+        <link rel="stylesheet" href="./styles/home.css" />
+        <link rel="shortcut icon" href="./images/logoHead.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./styles/navbar.css" />
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+        />
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+      </head>
+  <body style="background-color: black;">
     <div class="sidebarContainerWrapper">
       <div class="sidebarContainer">
         <div class="sidebarLogo" onclick="handleClick()">
@@ -39,8 +39,8 @@
           <img src="./images/logoTop.png" alt="Image" srcset="" id="Side" />
           <div class="border" id="Side"></div>
           <span><a href="./index.html">Home</a></span>
-          <span><a href="./about.htm">About</a></span>
-          <span><a href="./services.htm" class="active">Services</a></span>
+          <span><a href="./about.htm" class="active">About</a></span>
+          <span><a href="./services.htm">Services</a></span>
           <span><a href="./contact.htm">Contact</a></span>
           <span><a href="./learn.htm">Learn</a></span>
           <div class="copyright" id="Side">
@@ -54,72 +54,103 @@
       </div>
     </div>
     <script>
-      $("html").click(function (e) {
-        if (
-          e.target.id != "Side" &&
-          document.getElementById("open").style.display == "none"
-        ) {
-          if (e.target.id != "open") {
-            handleClick();
+        $("html").click(function (e) {
+          if (
+            e.target.id != "Side" &&
+            document.getElementById("open").style.display == "none"
+          ) {
+            if (e.target.id != "open") {
+              handleClick();
+            }
+          }
+        });
+  
+        function handleClick() {
+          if (document.getElementById("open").style.display != "none") {
+            document.getElementById("open").style.display = "none";
+            document.getElementById("close").style.display = "block";
+            document;
+            $(".sidebarContainer").css("left", "calc(30% - 40px)");
+            $(".mainBodyContainer").css("height", "650px");
+            $(".sidebarContainerWrapper").css(
+              "background-color",
+              "rgba(0, 0, 0, 0.7)"
+            );
+            $(".sidebarContainerWrapper").css("z-index", "5");
+          } else {
+            document.getElementById("close").style.display = "none";
+            document.getElementById("open").style.display = "block";
+            $(".sidebarContainer").css("left", "calc(100% - 40px)");
+            $(".mainBodyContainer").css("height", "100%");
+            $(".sidebarContainerWrapper").css("background-color", "transparent");
+            $(".sidebarContainerWrapper").css("z-index", "unset");
           }
         }
-      });
-
-      function handleClick() {
-        if (document.getElementById("open").style.display != "none") {
-          document.getElementById("open").style.display = "none";
-          document.getElementById("close").style.display = "block";
-          document;
-          $(".sidebarContainer").css("left", "calc(30% - 40px)");
-          $(".mainBodyContainer").css("height", "650px");
-          $(".sidebarContainerWrapper").css(
-            "background-color",
-            "rgba(0, 0, 0, 0.7)"
-          );
-          $(".sidebarContainerWrapper").css("z-index", "5");
-        } else {
-          document.getElementById("close").style.display = "none";
-          document.getElementById("open").style.display = "block";
-          $(".sidebarContainer").css("left", "calc(100% - 40px)");
-          $(".mainBodyContainer").css("height", "100%");
-          $(".sidebarContainerWrapper").css("background-color", "transparent");
-          $(".sidebarContainerWrapper").css("z-index", "unset");
-        }
-      }
-    </script>
+      </script>
     <div class="mainBodyContainer">
-      <div class="navbar">
+    <div class="AboutpageHead">
+        <img
+          class="MainGraph"
+          src="./images/graph.png"
+          alt="Main image"
+          srcset=""
+        />
         <div
-          class="navLogo logoMainTop"
-          style="background-color: transparent; overflow: visible; z-index: 1"
+          class="navbar"
+          style="background-color: transparent; overflow: visible"
         >
-          <a href="./index.html">
-            <img src="./images/logoTop.png" alt="HexlerTech Logo" />
-          </a>
-        </div>
-        <div class="navItemsContainer">
-          <ul class="navItems">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.htm">About</a></li>
-            <li><a href="./services.htm" class="active">Services</a></li>
-            <li><a href="./contact.htm">Contact</a></li>
-            <li><a href="./learn.htm">Learn</a></li>
-          </ul>
+          <div
+            class="navLogo"
+            style="background-color: transparent; overflow: visible"
+          >
+            <div class="CircleStyle"></div>
+            <a href="./index.html">
+              <img src="./images/logoTop.png" alt="HexlerTech Logo" />
+            </a>
+          </div>
+          <div class="navItemsContainer" style="background-color: transparent">
+            <ul class="navItems" style="background-color: transparent">
+              <li style="background-color: transparent">
+                <a href="./index.html" style="background-color: transparent"
+                  >Home</a
+                >
+              </li>
+              <li style="background-color: transparent">
+                <a href="./about.htm" style="background-color: transparent" class="active"
+                  >About</a
+                >
+              </li>
+              <li style="background-color: transparent">
+                <a href="./services.htm" style="background-color: transparent"
+                  >Services</a
+                >
+              </li>
+              <li style="background-color: transparent">
+                <a href="./contact.htm" style="background-color: transparent"
+                  >Contact</a
+                >
+              </li>
+              <li style="background-color: transparent">
+                <a
+                  href="./learn.htm"
+                  style="background-color: transparent"
+                  >Learn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="ServiceTitle">
-        <h1>Our Services</h1>
-        <p>
-          We offer services that includes from programming, designing to content
-          wrriting. Our mission is to provide quality services to help excel
-          business by our quality work.
-        </p>
-        <span>
-          <a href="./index.html">Home /</a>
-          <h2>&nbsp; Services</h2>
-        </span>
-      </div>
-      <br /><br />
+    <div class="AboutHeader">
+      <h1>Our Services</h1>
+      <span>
+        <a href="./index.html">Home /</a>
+        <h2>&nbsp; Services</h2>
+      </span>
+    </div>
+
+
+    <br /><br />
       <div class="blackTheme">
         <br />
         <h5 class="Heading">Programming & Tech</h5>
@@ -511,7 +542,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>    
     </div>
   </body>
 </html>
