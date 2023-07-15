@@ -37,6 +37,12 @@
     width: 100%;
 }
 
+@media (max-width: 998px) {
+    .pageHead{
+        height: 333px;
+    }
+}
+
 .pageHead img{
     z-index: 0;
     height: calc(100% - 65px);
@@ -2618,7 +2624,7 @@ img {
         font-size: 12px;
     }
     .p3{
-        top: 150px;
+        top: 135px;
         font-size: 14px;
         line-height: 16px;
     }
@@ -2626,10 +2632,9 @@ img {
         top: 185px;
         line-height: 14px;
         font-size: 12px;
-        display: none;
     }
     .a2{
-        top: 105px;
+        top: 90px;
     }
     .MainContainerWrapper{
         margin-top: -65px;
@@ -2668,4 +2673,17 @@ img {
     .sidebarContainerWrapper{
         display:block;
     }
+}
+
+
+#Schedule-meeting-with-us{
+    color: white;
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 60px;
+}
+
+#Meeting-Tag{
+    text-align: left;
+    font-weight: 400;
 }
